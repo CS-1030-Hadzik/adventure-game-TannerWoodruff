@@ -21,4 +21,42 @@ print("Your journey begins here...")
 # "CTRL + /" IS A COMMENT SHORTCUT
 
 # Asking the user/player for their name.
-print("Tell us your name, traveller.")
+name = input("Tell us your name, traveller. ")
+
+'''
+# Concatenate strings to create a personalized message
+print()
+'''
+# OR Use an f-string to display the same message in a more readable way.
+print(f'Welcome, {name}. Your journey begins now.\n')
+
+# Describe the starting area
+starting = '''
+
+'''
+
+#Ask for first decision.
+decision = input('Do you wanna take the path? (Y/N) ').lower()
+# Respond based on the player's decision
+if decision == 'y':
+    print(f"We can work with that, {name}. We'll work with that.")
+    print('Robert Frost would be proud- you took the road less traveled.')
+elif decision == 'n':
+    print(f"Dang {name}, you're kind of a coward, aren't you?")
+    print("Fine. We'll wait.")
+else: print("That wasn't one of the options, dipstick. Try again. Maybe read the directions this time.")
+
+# LOOP TIME WOOOOOOOOOOOOOOOO
+
+# ## THIS MEANS TO UPDATE THE VARIABLE WHILE RUNNING THE LOOP UNTIL VAL IS GREATER THAN 6...
+# number = 1
+# while number < 6:
+#    print(number)
+#    number += 1
+
+# FOR LOOP: used when you know how many times the loop needs to be done
+# WHILE LOOP: used when number of loops is UNKNOWN. This runs until a condition is met.
+
+'''
+Run code. Make sure it works. Take a screenshot. Send the screenshot.
+ALSO GITHUB REPOSITORY URL'''
