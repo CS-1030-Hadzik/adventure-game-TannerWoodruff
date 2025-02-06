@@ -25,7 +25,7 @@ name = input("Tell us your name, traveller. ")
 
 '''
 # Concatenate strings to create a personalized message
-print()
+print("Welcome, " + name + "! Your journey begins now.")
 '''
 # OR Use an f-string to display the same message in a more readable way.
 print(f'Welcome, {name}. Your journey begins now.\n')
@@ -35,8 +35,20 @@ starting = '''
 
 '''
 
+
 #Ask for first decision.
 decision = input('Do you wanna take the path? (Y/N) ').lower()
+'''
+while decision not in ["yes", "no"]:
+    print("Confused, you stand still, unsure of what to do.")
+    ##Option for the user to make a new decision.
+    decision = input("Do you want to take the path? (yes or no): ").lower()
+'''
+#   DEBUGGING STUFFS.
+##  The debuging tool shown here in VSCode with Python, with the "step into" and "step over" buttons is...
+##  according to Hadzik, "Pretty universal."
+
+
 # Respond based on the player's decision
 if decision == 'y':
     print(f"We can work with that, {name}. We'll work with that.")
